@@ -83,7 +83,7 @@ export default function Home() {
             {events.map((event) => {
               const date = new Date(event.startDate);
               return (
-                <Link key={event.id} href={`/info/${event.id}`} className="group">
+                <Link key={event.id} href="/blog" className="group">
                   <article className="flex gap-6 bg-white p-6 rounded-xl shadow-sm border border-gray-100 group-hover:border-sky-300 group-hover:shadow-md transition-all">
                     <div className="flex flex-col items-center justify-center min-w-[70px] h-[70px] bg-sky-50 text-sky-600 rounded-lg font-bold group-hover:bg-sky-500 group-hover:text-white transition-colors">
                       <span className="text-xs">{date.getMonth() + 1}월</span>
@@ -111,7 +111,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {benefits.map((benefit) => (
-              <Link key={benefit.id} href={`/info/${benefit.id}`} className="group">
+              <Link key={benefit.id} href="/blog" className="group">
                 <article className="bg-white p-8 rounded-xl shadow-sm border-2 border-green-500 flex flex-col h-full hover:shadow-lg hover:border-green-600 transition-all">
                   <div className="flex items-center gap-2 mb-4">
                     <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded-md uppercase">
